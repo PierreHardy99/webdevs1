@@ -5,7 +5,7 @@
 $name = 'John Doe';
 $connect = false;
 $val = 20.5;
-$teachers = ['John', 'Dominique', 'Pierre'];
+$teachers = ['John',15, 'Pierre',true];
 $childs = 4;
 
 // gettype() Retourne le type de la variable
@@ -18,6 +18,17 @@ echo gettype($val); // Double | Float
 settype($childs, 'string');
 echo '<br>';
 echo gettype($childs); // String
+echo '<br>';
+
+// Les fonctions is...
+if (is_array($teachers)) {
+    echo 'La variable est de type tableau';
+}
+// Idem mais avec gettype + test d'égalité sur le type
+echo '<br>';
+if (gettype($teachers) == 'array') {
+    echo 'La variable est de type tableau';
+}
 
 // Empty() vérifie si une variable est vide
 echo '<br>';
@@ -35,5 +46,20 @@ echo '<br>';
 if (isset($price)) {
     echo 'la variable a été déclarée';
 }
+echo '<br>';
+
+// Opérateur d'invertion (contraire) ! = not
+if (!isset($price)) {
+    echo 'La variable n\'existe pas';
+}
+echo '<br>';
+
+// unset() Supprime une variable
+unset($val);
+// echo $val; Warning: Underined variable $val
+
+// var_dump() Affiche le contenu et les informations d'une variable: fonction pour débuguer pas pour afficher dans le client
+
+var_dump($teachers);
 
 ?>
