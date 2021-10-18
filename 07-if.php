@@ -81,6 +81,7 @@ echo '<br>';
 // Si MA >  500 => 10%
 // Sinon        =>  5%
 
+// Version avec répétitions
 $ma = 10000;
 if($ma > 1000) {
 	echo 'Remise: '.$ma * 30 / 100;
@@ -91,3 +92,62 @@ if($ma > 1000) {
 } else {
 	echo 'Remise: '.$ma * 5 / 100;
 }
+
+// Version optimisée
+// Le taux de la remise est enregistré pour chaque condition dans la même variable (DRY)
+
+if ($ma > 1000) {
+	$discount = 0.30;
+} elseif ($ma > 700) {
+	$discount = 0.20;
+} elseif ($ma > 500) {
+	$discount = 0.10;
+} else {
+	$discount = 0.05;
+}
+echo '<br>';
+echo 'Remise : '.$ma * $discount;
+echo '<br>';
+
+// 04
+// Le visiteur aura accès au site si son âge est supérieur ou égal à 18 et s'il est authentifié
+$age = 18;
+$auth = true;
+if ($age >= 18 && $auth == true) {
+	echo 'Accès au site';
+}
+
+// On peut simplifier le test sur un booléen en indiquant seulement le nom de la variable pour true et !nom pour la variable pour false
+if ($age >= 18 && $auth) {
+	echo 'Accès au site';
+}
+echo '<br>';
+
+$presence = 10;
+$point = 60;
+// 5)
+// En fonction des présences de l'étudiant (>=10) affichez le grade obtenu
+// point >= 80 	PGD
+// point >= 70 	GD
+// point >= 60 	D
+// point >= 50 	S
+// sinon:		Refusé
+echo '<br>';
+if ($presence >= 10) {
+	if ($point >= 80) {
+		$note = 'PGD';
+	} elseif ($point >= 70) {
+		$note = 'GD';
+	} elseif ($point >= 60) {
+		$note = 'D';
+	} elseif ($point >= 50) {
+		$note = 'S';
+	} else {
+		$note = 'Refusé';
+	}
+
+	echo 'Votre grade est: '.$note;
+} else {
+	echo 'Trop d\'absences... Abandon';
+}
+echo '<br>';
