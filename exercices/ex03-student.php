@@ -23,18 +23,20 @@ require_once '../partials/header.php';
     <a href="?country=be"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Flag_of_Belgium.svg/139px-Flag_of_Belgium.svg.png" alt="Drapeaux de la Belgique" width="25px" height="25px"></a>
 <?php 
 // C
-
-if (isset($_GET['country'])) {
-    if ($_GET['country'] == 'es' || $_GET['country'] == 'pe' || $_GET['country'] == 'bo') {
-        require_once 'partials/es-pe-bo.php';
-    } elseif ($_GET['country'] == 'en') {
-        require_once 'partials/en.php';
-    } elseif ($_GET['country'] == 'de' || $_GET['country'] == 'au') {
-        require_once 'partials/de-au.php';
-    } else {
-        require_once 'partials/be.php';
-    }
+if (!isset($_GET['country'])) {
+    $_GET['country'] = 'be';
 }
+
+if ($_GET['country'] == 'es' || $_GET['country'] == 'pe' || $_GET['country'] == 'bo') {
+    require_once 'partials/es-pe-bo.php';
+} elseif ($_GET['country'] == 'en') {
+    require_once 'partials/en.php';
+} elseif ($_GET['country'] == 'de' || $_GET['country'] == 'au') {
+    require_once 'partials/de-au.php';
+} else {
+    require_once 'partials/be.php';
+}
+
 
 require_once '../partials/footer.php';
 ?>
