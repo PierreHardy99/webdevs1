@@ -38,33 +38,33 @@ echo '<hr>';
  */
 
 // 2
-$car = ['Polo' => 17000, 'Tiguan' => 29000, 'Golf' => 21000, 'Touran' => 26000, 'T-Rock' => 23000];
+$cars = ['Polo' => 17000, 'Tiguan' => 29000, 'Golf' => 21000, 'Touran' => 26000, 'T-Rock' => 23000];
 
 // 2.1
-ksort($car);
-asort($car);
+ksort($cars);
+asort($cars);
 
-foreach ($car as $key => $value) {
-    echo $key.' '.$value.' €<br>';
+foreach ($cars as $car => $price) {
+    echo $car.' '.$price.' €<br>';
 }
 
 echo '<hr>';
 
 // 2.2
-echo count($car).' voitures';
+echo count($cars).' voitures';
 
 echo '<hr>';
 
 // 2.3
-echo 'Prix total: '.array_sum($car).' €';
+echo 'Prix total: '.array_sum($cars).' €';
 
 echo '<hr>';
 
 // 2.4
-foreach ($car as $key => $value) {
-    if ($value > 25000) {
-        echo $key.' <b>'.$value.'</b> €<br>';
+foreach ($cars as $car => $price) {
+    if ($price > 25000) {
+        echo $car.' <b>'.$price.'</b> €<br>';
     } else {
-        echo $key.' '.$value.' €<br>';
+        echo $car.' '.$price.' €<br>';
     }
 }
