@@ -68,3 +68,4 @@ foreach ($cars as $car => $price) {
         echo $car.' '.$price.' €<br>';
     }
 }
+?>
