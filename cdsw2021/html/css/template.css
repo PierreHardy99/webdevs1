@@ -26,22 +26,34 @@ span {
     text-decoration: underline;
 }
 
-i{
-    animation: test 2 infinite;
+li{
+    animation-name: test;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
 }
 
-@keyframes test{
+/* Classe qui permet de cibler les balises pour lesquelles ont applique l'attribut "class" */
+.icons{
+    list-style-type: none;
+}
+
+.orange{
+    /* color: coral; */
+    animation: rainbowColor 20s infinite;
+}
+
+@keyframes rainbowColor{
     0%{
         color: red;
     }
     25%{
-        color: blue;
+        color: rgb(22, 22, 177);
     }
     50%{
         color: brown
     }
     75%{
-        color: yellow;
+        color: rgb(179, 179, 5);
     }
     100%{
         color: red;
