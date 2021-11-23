@@ -1,5 +1,9 @@
 /* Page model */
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 2% 10%;
     font-family: sans-serif;
@@ -20,4 +24,26 @@ legend {
 
 span {
     text-decoration: underline;
+}
+
+i{
+    animation: test 2 infinite;
+}
+
+@keyframes test{
+    0%{
+        color: red;
+    }
+    25%{
+        color: blue;
+    }
+    50%{
+        color: brown
+    }
+    75%{
+        color: yellow;
+    }
+    100%{
+        color: red;
+    }
 }
