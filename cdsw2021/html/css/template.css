@@ -22,10 +22,6 @@ legend {
     color: #555;
 }
 
-span {
-    text-decoration: underline;
-}
-
 li{
     animation-name: test;
     animation-direction: normal;
@@ -50,7 +46,7 @@ li{
         color: rgb(22, 22, 177);
     }
     50%{
-        color: brown
+        color: brown;
     }
     75%{
         color: rgb(179, 179, 5);
