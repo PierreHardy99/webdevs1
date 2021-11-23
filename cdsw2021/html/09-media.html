@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+</head>
+
+<body>
+    <h2>Vidéo</h2>
+    <fieldset>
+        <legend>Video - fichier unique de base</legend>
+        <video src="media/bunny.mp4" controls>
+        </video>
+    </fieldset>
+
+    <fieldset>
+        <legend>Video - fichier unique avec option</legend>
+        <video src="media/bunny.mp4" controls autoplay muted loop preload width="500">
+    </fieldset>
+
+    <fieldset>
+        <legend>Video - Image cache (poster)</legend>
+        <video src="media/bunny.mp4" poster="media/bunny.jpg" controls width="500">
+        </video>
+    </fieldset>
+
+    <fieldset>
+        <legend>Video multiples</legend>
+        <video controls width="500">
+            <source src="media/bunny.mp4">
+            <source src="media/bunny2.webm">
+            <p>Format de video non reconnu</p>
+        </video>
+    </fieldset>
+
+    <h2>L'audio</h2>
+    <fieldset>
+        <legend>Audio fichier unique</legend>
+        <!-- Même options (attributs) que la vidéo -->
+        <audio src="media/dr.dre.flac" controls></audio>
+    </fieldset>
+
+    <fieldset>
+        <legend>Audio fichier multiples</legend>
+        <!-- Même options (attributs) que la vidéo -->
+        <audio controls>
+            <source src="media/dr.dre.flac">
+            <source src="media/Ocean Eyes.flac">
+            <source src="media/soso-madness.mp3">
+            <p>Format audio non pris en charge</p>
+        </audio>
+    </fieldset>
+</body>
+
+</html>
