@@ -1,0 +1,116 @@
+# Translation of Plugins - GDPR Data Request Form - Stable (latest release) in English (UK)
+# This file is distributed under the same license as the Plugins - GDPR Data Request Form - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2020-07-07 10:58:54+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
+"Language: en_GB\n"
+"Project-Id-Version: Plugins - GDPR Data Request Form - Stable (latest release)\n"
+
+#: public/widget.php:72 public/js/block.js:94
+msgid "Data Remove form only"
+msgstr "Data Remove form only"
+
+#: public/widget.php:71 public/js/block.js:93
+msgid "Data Export form only"
+msgstr "Data Export form only"
+
+#: public/widget.php:70 public/js/block.js:92
+msgid "Both Export and Remove"
+msgstr "Both Export and Remove"
+
+#. Description of the plugin
+msgid "Use WordPress Core GDPR tools to build front-end Personal Data export/erasure forms (includes Widget, Gutenberg Block, shortcode & Hooks)."
+msgstr "Use WordPress Core GDPR tools to build front-end Personal Data export/erasure forms (includes Widget, Gutenberg Block, shortcode and Hooks)."
+
+#. Author of the plugin
+msgid "audrasjb"
+msgstr "audrasjb"
+
+#: public/hook.php:102
+msgid "This plugin requires WordPress 4.9.6."
+msgstr "This plugin requires WordPress 4.9.6."
+
+#: includes/data-request.php:36 data-request.php:36
+msgid "Security check failed, invalid human verification field."
+msgstr "Security check failed, invalid human verification field."
+
+#: public/hook.php:38
+msgid "Human verification (required):"
+msgstr "Human Verification (required):"
+
+#. Author URI of the plugin
+msgid "https://jeanbaptisteaudras.com"
+msgstr "https://jeanbaptisteaudras.com"
+
+#. Plugin URI of the plugin
+msgid "https://jeanbaptisteaudras.com/gdpr-data-request-form"
+msgstr "https://jeanbaptisteaudras.com/gdpr-data-request-form"
+
+#. Plugin Name of the plugin
+msgid "GDPR Data Request Form"
+msgstr "GDPR Data Request Form"
+
+#: public/widget.php:64
+msgid "Optional widget description:"
+msgstr "Optional widget description:"
+
+#: public/widget.php:60
+msgid "Optional widget title:"
+msgstr "Optional widget title:"
+
+#: public/enqueues.php:25 public/public.php:25
+msgid "Some errors occurred:"
+msgstr "Some errors occurred:"
+
+#: public/enqueues.php:24 public/public.php:24
+msgid "Your enquiry have been submitted. Check your email to validate your data request."
+msgstr "Your enquiry have been submitted. Check your email to validate your data request."
+
+#: public/hook.php:37
+msgid "Your email address (required)"
+msgstr "Your email address (required)"
+
+#: public/hook.php:36
+msgid "Remove Personal Data"
+msgstr "Remove Personal Data"
+
+#: public/hook.php:35
+msgid "Export Personal Data"
+msgstr "Export Personal Data"
+
+#: public/hook.php:34
+msgid "Select your request:"
+msgstr "Select your request:"
+
+#: includes/data-request.php:50 data-request.php:50
+msgid "Unable to initiate confirmation request. Please contact the administrator."
+msgstr "Unable to initiate confirmation request. Please contact the administrator."
+
+#: includes/data-request.php:43 data-request.php:43
+msgid "All fields are required."
+msgstr "All fields are required."
+
+#: includes/data-request.php:39 data-request.php:39
+msgid "Request type invalid, please refresh this page and try to submit the form again."
+msgstr "Request type invalid, please refresh this page and try to submit the form again."
+
+#: includes/data-request.php:33 data-request.php:33
+msgid "This is not a valid email address."
+msgstr "This is not a valid email address."
+
+#: includes/data-request.php:30 data-request.php:30
+msgid "Security check failed, please refresh this page and try to submit the form again."
+msgstr "Security check failed, please refresh this page and try to submit the form again."
+
+#: includes/data-request.php:24 data-request.php:24
+msgid "The request can’t be processed on this website. This feature requires WordPress 4.9.6 at least."
+msgstr "The request can’t be processed on this website. This feature requires WordPress 4.9.6 at least."
+
+#: public/hook.php:39
+msgid "Send Request"
+msgstr "Send Request"
