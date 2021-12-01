@@ -170,12 +170,14 @@ ORDER BY `juron` ASC;
 --    classés par ordre alpahbétique sur titre, nom du juron
 ---------------------------------------------------------------------------
 
-SELECT
+SELECT DISTINCT a.idAlb, titreAlb AS `titre`, j.idJur, nomJur AS `juron`
 FROM album AS a
 LEFT JOIN juron_album AS jalb ON a.idAlb = jalb.idAlb
 LEFT JOIN juron AS j ON jalb.idJur = j.idJur
 LEFT JOIN personnage AS p ON jalb.idPers = p.idPers
-ORDER BY;
+WHERE nomPers = 'TINTIN'
+GROUP BY nomJur
+ORDER BY `titre` ASC, nomJur ASC;
 
 -----------------------------------------------------------------------------
 -- 13.pour chaque album, le nombre de jurons DIFFERENTS prononcés par Tintin
@@ -183,7 +185,25 @@ ORDER BY;
 --    classés par ordre alpahbétique sur titre
 -----------------------------------------------------------------------------
 
+SELECT  a.idAlb, titreAlb AS `titre`, COUNT(j.Idjur) AS `nombre de jurons`
+FROM album AS a
+LEFT JOIN juron_album AS jalb ON a.idAlb = jalb.idAlb
+LEFT JOIN juron AS j ON jalb.idJur = j.idJur
+LEFT JOIN personnage AS p ON jalb.idPers = p.idPers
+WHERE nomPers = 'TINTIN'
+GROUP BY `titre`
+ORDER BY `titre` ASC, nomJur ASC;
+
 -- -----------------------------------------------------------------------------
 -- 14.les 5 album dans lesquels tintin prononce le plus de jurons DIFFERENTS
 --    idAlb, titre, nombre de jurons
 -- -----------------------------------------------------------------------------
+
+SELECT DISTINCT a.idAlb, titreAlb AS `titre`, COUNT(j.Idjur) AS `nombre de jurons`
+FROM album AS a
+LEFT JOIN juron_album AS jalb ON a.idAlb = jalb.idAlb
+LEFT JOIN juron AS j ON jalb.idJur = j.idJur
+LEFT JOIN personnage AS p ON jalb.idPers = p.idPers
+WHERE nomPers = `TINTIN`
+ORDER BY `titre` ASC, nomJur ASC
+LIMIT 5;
