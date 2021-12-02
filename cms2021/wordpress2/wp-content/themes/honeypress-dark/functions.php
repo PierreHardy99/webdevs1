@@ -226,3 +226,11 @@ function honeypress_dark_color_back_settings_customizer( $wp_customize ) {
     ) );
 }
 add_action( 'customize_register', 'honeypress_dark_color_back_settings_customizer', 11);
+function allow_modern_images( $mime_types ) {
+  $mime_types['jxl'] = 'image/jxl';
+  $mime_types['webp'] = 'image/webp';
+  $mime_types['avif'] = 'image/avif';
+  $mime_types['avis'] = 'image/avif-sequence';
+  return $mime_types;
+}
+add_filter( 'upload_mimes', 'allow_modern_images', 1, 1 );
