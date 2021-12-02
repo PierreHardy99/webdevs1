@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire - Listes</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Balise select</legend>
+        <form action="#" method="post">
+            <label for="fct">Sélectionnez votre fonction</label>
+            <select name="fonction" id="fct">
+                <option value="">Sélectionnez votre fonction...</option>
+                <option value="Enseignant">Enseignant</option>
+                <option value="Directeur">Directeur</option>
+                <option value="Econome">Econome</option>
+                <option value="Secrétaire">Secrétaire</option>
+                <option value="Etudiant">Etudiant</option>
+            </select>
+        </form>
+    </fieldset>
+
+    <fieldset>
+        <legend>Liste stuturée</legend>
+        <form action="#" method="post">
+            <label for="country">Sélectionnez votre pays</label>
+            <select name="country" id="country">
+                <option value="">Sélectionnez un pays</option>
+                <optgroup label="Europe">
+                    <option value="be">Belgique</option>
+                    <option value="it">Italie</option>
+                    <option value="fr">France</option>
+                    <option value="es">Espace</option>
+                    <option value="de">Allemand</option>
+                </optgroup>
+                <optgroup label="Amérique">
+                    <option value="ar">Argentine</option>
+                    <option value="us">Etats unis</option>
+                    <option value="ca">Canada</option>
+                </optgroup>
+            </select>
+        </form>
+    </fieldset>
+</body>
+</html>

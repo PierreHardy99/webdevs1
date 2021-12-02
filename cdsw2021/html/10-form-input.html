@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/template.css">
+    <title>Les formulaires et la balise input</title>
+</head>
+<body>
+    <!-- - action  = le fichier de traitement du formulaire qui sera toujours en php
+    - method get = passage des données sous la forme de paramètres dans l'url =>
+    - method post
+    -for = association entre le label et le champ
+    - attribut ,ame permet de récupérer la donnée dans le script -->
+    <fieldset>
+        <legend>Formulaire de base</legend>
+        <form action="#" method="get">
+            <label for="name">Votre nom:</label>
+            <input type="text" id="name" name="name">
+            <input type="submit" value="ENVOIE FDP">
+        </form>
+    </fieldset>
+
+    <fieldset>
+        <form action="#" method="get">
+            <legend>Les types de champs</legend>
+            <label for="mail">Votre mail</label>
+            <input type="email" name="mail" id="email">
+            <br>
+            <label for="url">Votre site web</label>
+            <input type="url" name="site" id="url">
+            <br>
+            <label for="child">Nombre d'enfants</label>
+            <input type="number" name="child" id="child" min="0" max="8" value="1">
+            <br>
+            <label for="rdv">Choisissez votre date</label>
+            <input type="date" name="rdv" id="rdv" value="2021-12-02" min="2021-10-01">
+            <br>
+            <label for="month">Votre mois de naissance</label>
+            <input type="month" name="month" id="month">
+            <br>
+            <input type="submit" value="Enregistrer">
+        </form>
+    </fieldset>
+
+    <fieldset>
+        <legend>Autres attribut</legend>
+        <form action="#" method="get">
+            <label for="first-name">Votre prénom</label>
+            <input type="text" id="first-name" name="first-name" required>
+            <!-- La balise button va permettre le traitement javascript avant la soumission -->
+            <button type="submit">Soumettre</button>
+        </form>
+    </fieldset>
+
+    <fieldset>
+        <legend>Boutons radio</legend>
+        <form action="#" method="get">
+            <p>Votre genre:</p>
+            <input type="radio" id="m" name="gender" value="Monsieur">
+            <label for="m">Monsieur</label>
+            <br>
+            <input type="radio" id="mme" name="gender" value="Madame">
+            <label for="mme">Madame</label>
+            <br>
+            <input type="radio" id="mle" name="gender" value="Mademoiselle">
+            <label for="mle">Mademoiselle</label>
+            <br>
+            <input type="submit">&nbsp;&nbsp;&nbsp;<input type="reset" value="Réinitialiser">
+        </form>
+    </fieldset>
+
+    <fieldset>
+        <legend>Cases à cocher</legend>
+        <form action="" method="get">
+            <p>Vos occupations</p>
+            <input type="checkbox" name="sport" id="s" value="1">
+            <label for="s">Sport</label>
+            <br>
+            <input type="checkbox" name="lecture" id="l" value="1">
+            <label for="l">Lecture</label>
+            <br>
+            <input type="checkbox" name="informatique" id="i" value="1">
+            <label for="i">Informatique</label>
+            <br>
+            <input type="checkbox" name="cinema" id="c" value="1">
+            <label for="c">Cinéma</label>
+        </form>
+    </fieldset>
+</body>
+</html>
