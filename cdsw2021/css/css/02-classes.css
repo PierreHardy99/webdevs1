@@ -1,0 +1,37 @@
+/* Created: 2021-12-07 */
+/* Updated: 2021-12-07 */
+
+/* Regroupement de sélecteur */
+h1,
+h2,
+h3 {
+    font-family: Verdana, sans-serif;
+}
+
+h1 {
+    color: red;
+}
+
+h2 {
+    color: blue;
+}
+
+h3 {
+    color: orange;
+}
+
+p {
+    font-size: 20px;
+}
+
+/* Classes en CSS */
+/* Un classe permet d'appliquer une exception sur une balise */
+/* Classe universelle - portée globale*/
+.small {
+    font-size: 16px;
+}
+
+/* Classe de sélecteyr - portée limitée */
+h2.color {
+    color: rgb(19, 107, 2);
+}
