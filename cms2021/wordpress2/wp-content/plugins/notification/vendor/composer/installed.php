@@ -1,22 +1,22 @@
 <?php return array(
     'root' => array(
-        'pretty_version' => '8.0.6',
-        'version' => '8.0.6.0',
+        'pretty_version' => '8.0.7',
+        'version' => '8.0.7.0',
         'type' => 'wordpress-plugin',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => 'fdde86349976248a60202b084a361a267772a0fe',
+        'reference' => '73b395efbcdbde81aa5ab3c2686db8e0109f64a3',
         'name' => 'bracketspace/notification',
         'dev' => false,
     ),
     'versions' => array(
         'bracketspace/notification' => array(
-            'pretty_version' => '8.0.6',
-            'version' => '8.0.6.0',
+            'pretty_version' => '8.0.7',
+            'version' => '8.0.7.0',
             'type' => 'wordpress-plugin',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => 'fdde86349976248a60202b084a361a267772a0fe',
+            'reference' => '73b395efbcdbde81aa5ab3c2686db8e0109f64a3',
             'dev_requirement' => false,
         ),
         'enshrined/svg-sanitize' => array(
