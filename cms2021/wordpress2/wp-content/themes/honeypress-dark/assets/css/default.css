@@ -91,7 +91,6 @@ blockquote { border-left: 4px solid #F9004D; background-color: #1A1A1A; }
 .dark p.comment-form-comment label, .comment-detail .comment-detail-title { color: #ffffff; }
 input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], input[type="number"], input[type="tel"], input[type="range"], input[type="date"], input[type="month"], input[type="week"], input[type="time"], input[type="datetime"], input[type="datetime-local"], input[type="color"], textarea {
     color: #ffffff !important;
-    background: #1A1A1A !important;
     border: 1px solid #141414 !important;
 }
 input[type="text"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="number"]:focus, input[type="tel"]:focus, input[type="range"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="week"]:focus, input[type="time"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="color"]:focus, textarea:focus  {

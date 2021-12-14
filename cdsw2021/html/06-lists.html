@@ -1,62 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Les listes</title>
     <link rel="stylesheet" href="css/template.css">
+    <title>Les listes</title>
 </head>
-
 <body>
     <fieldset>
-        <!-- Pour renvoyer vers un emplacement préis, on utilise un signet et un id. Dans le href du lien on place le htag #terme -->
-        <legend>Utilistion d'un signet</legend>
-        <p>Lorem <a href="#ipsum">ipsum</a> dolor sit, amet <a href="#consectetur">consectetur</a> adipisicing elit. Qui
-            officia, vero ipsum, pariatur sequi eligendi hic nobis nemo ex rerum labore sit adipisci earum! Quas
-            perferendis debitis, reprehenderit impedit qui culpa nam, ratione voluptates unde illo nostrum enim
-            voluptatem? Itaque.</p>
+        <!-- Pour renvoyer vers un emplacement précis, on utilise un signet (ancre) et un id
+        Dans le href du lien on place le htag #terme -->
+        <legend>Utilisation d'un signet</legend>
+        <p>Lorem <a href="#ipsum">ipsum</a>  dolor sit amet <a href="#consectetur">consectetur</a> adipisicing elit. Iusto ratione, dolores doloribus commodi nemo dolor eum. Nemo facilis iusto eos quod doloribus, maxime culpa placeat delectus ut nobis beatae illo nulla fuga est eum veritatis? Necessitatibus qui quas quae aspernatur?</p>
     </fieldset>
     <fieldset>
         <legend>Les listes ordonnées</legend>
         <ol>
-            <li>ETM</li>
+            <li>ETW</li>
             <li>IP</li>
-            <li>Réseaux</li>
+            <li>Réseau</li>
             <li>Sites statiques</li>
             <li>CMS</li>
         </ol>
-        <!-- Inverse la numérotation -->
+        <!-- Numérotation renversée  -->
+        <!-- Attribut booleen reversed -->
         <ol reversed>
-            <li>ETM</li>
+            <li>ETW</li>
             <li>IP</li>
-            <li>Réseaux</li>
+            <li>Réseau</li>
+            <li>Sites statiques</li>
+            <li>CMS</li>
+        </ol>
+        <!-- Modifier la numérotation: A, a, I et i -->
+        <ol type="A">
+            <li>ETW</li>
+            <li>IP</li>
+            <li>Réseau</li>
             <li>Sites statiques</li>
             <li>CMS</li>
         </ol>
 
-        <!-- Modifie la numérotation en lettre -->
-        <ol type="A">
+        <ol>
             <li>ETW</li>
             <li>IP</li>
-            <li>Réseaux</li>
-            <li>Sites statiques</li>
-            <li>CMS</li>
+            <li>Réseau</li>
         </ol>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi reiciendis dolore nihil voluptatibus nisi
-            deleniti vel alias sequi temporibus ut quo vero debitis voluptate voluptatem eos hic quam, nulla similique
-            est voluptas voluptatum magni expedita dignissimos illum? Reiciendis quis eaque, at neque, aperiam beatae
-            temporibus ad aut soluta voluptatum iste.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia voluptatibus, eos magnam autem, accusantium odio explicabo obcaecati dolorem facilis non, temporibus quo ex iusto amet ipsum. Quidem, tempora ex ad omnis maiores neque optio placeat. Hic laudantium ab a quas.</p>
         <!-- Modifier le début de la numérotation -->
         <ol start="4">
-            <li>Site statiques</li>
+            <li>Sites statiques</li>
             <li>CMS</li>
         </ol>
     </fieldset>
 
     <fieldset>
         <legend>Listes non ordonnées (à puces)</legend>
-        <!-- ul>li*5{Item 0$} -->
+        <!-- ul>li*5>{Item 0$} -->
         <ul>
             <li>Item 01</li>
             <li>Item 02</li>
@@ -64,32 +63,23 @@
             <li>Item 04</li>
             <li>Item 05</li>
         </ul>
-        <!-- Types: circle, square, disc... -->
-        <!-- <ul type="square">
-            <li>Item 01</li>
-            <li>Item 02</li>
-            <li>Item 03</li>
-            <li>Item 04</li>
-            <li>Item 05</li>
-        </ul> -->
     </fieldset>
 
     <fieldset>
         <legend>Listes imbriquées</legend>
-        <!-- 
+        <!--
         1 css
-        2 php
-        3 html
+        2 php 
+        3 html 
            A html 01
            B html 02
            C html 03
            D html 04
            E xhtml 01
            F html 05
-        4 Javasscript 
+        4 JavaScript
         -->
 
-        <!-- ol>li{CSS}+li{PHP}+li{HTML}>ol[type=a]>li*4{html 0$}+li{xhtml 01}+li{html 05}^^li{Javascripts} -->
         <ol>
             <li>CSS</li>
             <li>PHP</li>
@@ -103,31 +93,22 @@
                     <li>html 05</li>
                 </ol>
             </li>
-            <li>Javascripts</li>
+            <li>JavaScript</li>
         </ol>
     </fieldset>
 
     <fieldset>
-        <legend>Listes à définition</legend>
+        <legend>Listes à définitions</legend>
         <dl>
+            <dt>Lorem</dt>
+            <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quaerat, magni, voluptatem error iure inventore deleniti neque quo eaque, nulla sed debitis corrupti sit nesciunt?</dd>
             <!-- Pour définir l'emplacement du retour on positionne un id="terme" dans la balise du mot -->
-            <dt id="ipsum">lorem</dt>
-            <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem nihil voluptatibus aperiam earum
-                possimus quidem fugit ducimus omnis. Quo, fugit.</dd>
+            <dt id="ipsum">Ipsum</dt>
+            <dd>Dolor sit amet consectetur adipisicing elit. Esse error necessitatibus dolorum, quod explicabo voluptas nemo maxime quidem nulla eum fugiat expedita voluptatem? Fuga optio consequatur nemo. Fugiat, dignissimos laboriosam!</dd>
 
-            <dt>Dolor sit Amet</dt>
-            <dd>Dolor sit Amet, sit amet consectetur adipisicing elit. Iusto error quidem distinctio commodi harum
-                perspiciatis facilis nisi architecto omnis modi.</dd>
-
-            <dt id="consectetur">consectetur</dt>
-            <dd>consectetur sit amet repellendus, adipisicing elit. Reprehenderit enim laborum, consequatur atque
-                asperiores, nihil reiciendis ut, saepe tenetur deserunt illum! Earum in necessitatibus nisi facilis
-                numquam sequi soluta ab repellendus totam neque rerum saepe optio a accusantium atque nobis, eveniet
-                deserunt dolorum fuga modi laborum, corrupti ex minus! Voluptas?</dd>
+            <dt id="consectetur">Consectetur</dt>
+            <dd>Consectetur, adipisicing elit. Veniam eius beatae necessitatibus sed expedita, eligendi molestiae, neque, animi eum ex repellat ut. Praesentium ex culpa ipsam sequi. Aperiam nam, quidem quae vel odio consectetur reprehenderit fugiat. Dolores tempore, harum nisi, molestias ipsam voluptatem, corrupti omnis hic earum explicabo blanditiis magni!</dd>
         </dl>
-
-
     </fieldset>
 </body>
-
 </html>
