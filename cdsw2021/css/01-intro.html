@@ -1,52 +1,57 @@
 <!DOCTYPE html>
 <html lang="zxx">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/template.css">
-    <link rel="stylesheet" href="css/01-intro.css">
-    <title>Introduction</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/template.css">
+	<link rel="stylesheet" href="css/01-intro.css">
+	<title>Introduction</title>
 	<style>
 		/* CSS */
-		/* Css embarqués */
+		/* Css embarqués (Embedding) */
+		/* A utiliser écentuellement quand les css ne concerne que cette page (rare) */
 		h3 {
-			color: darkcyan;
+			color: #005005;
 		}
 
 		h4 {
-			color: orange;
+			color: #4b2c20;
 		}
-	</style> 
+	</style>
 </head>
-<!--  -->
 <body>
-    <fieldset>
-        <legend>Syntaxe CSS</legend>
+	<fieldset>
+		<legend>Syntaxe CSS</legend>
 		<pre>
+			Syntaxe:
+
 			selecteur {
-				propriété: valeur;
-				propriété: valeur;
+				propriété: valeur; // Définition
+				propriété: valeur; // définition
 				...
-			}
+			} = règle CSS
+
+			Exemple simple: 
 
 			h1 {
 				color: red;
 				font-size: 20px;
 			}
 		</pre>
-    </fieldset>
+	</fieldset>
 
 	<fieldset>
 		<legend>Introduction</legend>
 		<h1>Lorem ipsum dolor</h1>
-		<h2>sit amet consectetur</h2>
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente possimus ipsum nisi fugiat quia pariatur, harum adipisci atque cupiditate impedit earum dignissimos. Corrupti delectus molestias ea quisquam obcaecati fuga facere provident culpa, id cum perspiciatis non dolores quam! Laborum, non.</p>
-		<h2>Aperiam repudiandae</h2>
-		<p>Aperiam repudiandae voluptate animi error magnam assumenda a aut molestiae qui? Cupiditate esse, dicta saepe consequatur impedit eos laudantium, totam vitae repudiandae, facere dolorem quaerat quod modi cumque ipsa. Voluptas, non?</p>
-		<h2>Voluptats officia</h2>
+		<h2>Sit amet consectetur</h2>
+		<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo nobis asperiores error aut reprehenderit deserunt, ex voluptatum officia facere! Consequuntur totam perferendis quasi deserunt qui obcaecati ex recusandae laborum debitis voluptate atque numquam corporis molestiae, necessitatibus ullam provident est? Cumque!</p>
+		<h2>Quis iusto cum</h2>
+		<p>Quis iusto cum blanditiis placeat nihil aliquid qui quos necessitatibus ad, at ipsa aliquam nam quo labore exercitationem, esse voluptatibus alias earum tempora quibusdam? Fugit voluptates officia alias eligendi tenetur temporibus dolore, modi saepe facilis deserunt doloribus ex?</p>
+		<h2>Voluptates officia</h2>
 		<h3>Modi saepe facilis</h3>
-		<!-- Css de ligne -->
-		<h4 style="color:darkmagenta;">tempora quibusdam</h4>
+		<!-- Css de ligne (inline) Utilisé parfois dans les framework CSS à éviter -->
+		<h4 style="color: #5a9216;">Tempora quibusdam</h4>
+		<h4>deserunt</h4>
 	</fieldset>
 </body>
 </html>
