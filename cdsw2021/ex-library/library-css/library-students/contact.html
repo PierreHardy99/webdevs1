@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/icofont.min.css">
+	<!-- <style>
+		body {
+			margin: 2% 15%;
+			font-family: sans-serif;
+			color: #333;
+		}
+
+		fieldset {
+			margin-bottom: 20px;
+			border-radius: 8px;
+			border: 1px solid rgb(200, 200, 200);
+		}
+
+		legend {
+			padding: 0 7px;
+			font-size: 20px;
+			color: #555;
+		}
+	</style> -->
+</head>
+
+<body>
+	<!-- 
+		1) Sur cette page, reproduire le menu de navigation et faire le lien.
+		2) Dans la liste déroulante, prévoir deux groupes (romans, sciences humaines,...) et quelques livres par groupe.
+		3) Pour le nombre de livres, min 1, affichez 1 et max 10
+	-->
+	<header>
+		<nav>
+			<ul>
+				<li><b><span>Librairie</span> Lamartine </b>&nbsp;&nbsp;&nbsp;</li>
+				<li><a href="index.html" class="link"><i class="icofont-home"></i> Accueil </a>|</li>
+				<li><a href="portrail.html" class="link"> Portrait </a>|</li>
+				<li><a href="lexique.html" class="link"> Notre lexique </a>|</li>
+				<li><a href="contact.html" class="link"> Contact</a> </li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<fieldset>
+			<legend>Nous contacter</legend>
+			<!-- Votre formulaire -->
+			<form action="#" method="post">
+				<p>Genre
+					<input type="radio" id="m" name="gender" value="Monsieur">
+					<label for="m">Monsieur</label>
+					<input type="radio" id="mme" name="gender" value="Madame">
+					<label for="mme">Madame</label>
+					<input type="radio" id="mle" name="gender" value="Mademoiselle">
+					<label for="mle">Mademoiselle</label>
+				</p>
+
+				<label for="name">Votre nom &nbsp;</label>
+				<input type="text" id="name" name="name" placeholder="Votre nom et prénom">
+				<br>
+				<label for="mail">Votre Email </label>
+				<input type="email" id="mail" name="email">
+				<br>
+				<label for="book">Votre livre &nbsp;</label>
+				<select name="book" id="book">
+					<option value="">Choisissez </option>
+					<optgroup label="romans">
+						<option value="Livre1">Livre 1</option>
+						<option value="Livre2">Livre 2</option>
+						<option value="Livre3">Livre 3</option>
+						<option value="Livre4">Livre 4</option>
+						<option value="Livre5">Livre 5</option>
+					</optgroup>
+					<optgroup label="sciences humaines">
+						<option value="Livre1">Livre 1</option>
+						<option value="Livre2">Livre 2</option>
+						<option value="Livre3">Livre 3</option>
+						<option value="Livre4">Livre 4</option>
+						<option value="Livre5">Livre 5</option>
+					</optgroup>
+				</select>
+				<br>
+				<label for="numberBook">Nombre &nbsp;</label>
+				<input type="number" id="numberBook" name="numberBook" min="1" max="10" value="1">
+				<br>
+				<label for="satisfaction">Votre satisfaction</label>
+				<input type="range" id="satisfaction" name="satisfaction" min="0" max="10"
+					oninput="document.getElementById('levelSat').textContent=value">
+				<span id="levelSat">5</span>
+				<br>
+				<label for="com">Votre commentaire</label>
+				<br>
+				<textarea name="com" id="com" cols="30" rows="10">Commentaire ici...</textarea>
+				<br>
+				<input type="submit" value="Acheter">
+			</form>
+		</fieldset>
+	</main>
+
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact</title>
+	<style>
+		body {
+		margin: 2% 20%;
+		font-family: sans-serif;
+		color: #333;
+		}
+
+		fieldset {
+			margin: 3rem;
+			border-radius: 8px;
+			border: 1px solid rgb(200, 200, 200);
+		}
+
+		legend {
+			padding: 0 0.5rem;
+			font-size: 20px;
+			color: #555;
+		}
+	</style>
+</head>
+<body>
+	<p>
+		<b>Libraire Lamartine</b>&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="index.html">Accueil</a> |
+		<a href="portrait.html">Portrait</a> |
+		<a href="lexique.html">Notre lexique</a> |
+		<a href="contact.html">Contact</a>
+	</p>
+	<fieldset>
+		<legend>Nous contacter</legend>
+		<form action="" method="post">
+			<span>Genre</span>
+			<input type="radio" value="M" id="M" name="gender">
+			<label for="M">Monsieur</label>
+			<input type="radio" value="Me" id="Me" name="gender">
+			<label for="Me">Madame</label>
+			<input type="radio" value="Mle" id="Mle" name="gender">
+			<label for="Mle">Mademoiselle</label>
+			<br>
+			<label for="name">Votre nom&nbsp;&nbsp;</label>
+			<input type="text" id="name" name="name" required placeholder="Votre nom et prénom">
+			<br>
+			<label for="mail">Votre Email</label>
+			<input type="email" id="mail" required>
+			<br>
+			<label for="book">Votre livre&nbsp;&nbsp;</label>
+			<select name="book" id="book">
+				<option value="">Choisissez</option>
+				<optgroup label="Roman">
+					<option value="">La plus secrète mémoire des hommes</option>
+					<option value="">Pour rien au monde</option>
+					<option value="">La Prophétie des abeilles</option>
+				</optgroup>
+				<optgroup label="Sciences humaines">
+					<option value="">Dieu - La science Les preuves</option>
+					<option value="">Pourquoi l'Histoire a effacé les femmes</option>
+				</optgroup>
+			</select>
+			<br>
+			<label for="number">Nombre&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</label>
+			<input type="number" id="number" name="number" min="1" max="10" value="1">
+			<br>
+			<label for="sat">Votre satisfaction</label>
+			<input id="sat" type="range" name="sat" min="0" max="10" value="5" oninput="document.getElementById('level').textContent=value;">&nbsp;
+			<span id="level">5</span>
+			<br>
+			<label for="comm">Votre commentaire</label>
+			<br>
+			<textarea name="comm" id="" cols="30" rows="10">Commentaire ici...</textarea>
+			<br>
+			<input type="submit" value="Acheter">
+		</form>
+	</fieldset>
+</body>
+</html>

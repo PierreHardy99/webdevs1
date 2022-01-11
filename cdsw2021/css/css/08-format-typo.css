@@ -1,0 +1,85 @@
+/* Created 2021-12-21 */
+
+/* Propriété font */
+/* font-weight */
+.bold {
+	font-weight: bold;
+}
+
+h2,
+h3 {
+	font-weight: normal;
+}
+
+/* lighter ou bolder dépendent de l'élément parent */
+.lighter {
+	text-decoration: none;
+	font-weight: lighter;
+}
+
+/* font-style */
+/* Italic VS Oblique
+Italic dépend de la version de la typo que vous utilisez (google fonts).  Si pas scpécifié dans la typo c'est émuler oblique
+*/
+
+.italic {
+	font-style: italic;
+}
+
+i {
+	font-style: normal;
+}
+
+em {
+	font-style: normal;
+	color: rgb(134, 7, 7);
+}
+
+/* la propriété font-stretch permet de choisir entre la forme normal, condensée ou étendue d'une police.*/
+
+.stretch {
+	font-stretch: extra-condensed;
+}
+
+.variant {
+	font-variant: small-caps;
+}
+
+h3 {
+	font-variant-caps: petite-caps;
+}
+
+/* Propriété de regroupement font */
+/*
+font-style
+font-variant
+font-weight
+font-size/line-height *
+font-family *
+*/
+
+.group {
+	font: italic small-caps bold 1.2rem/1.1rem Verdana, sans-serif;
+}
+
+/* Propriétés text */
+/* transform: uppercase, capitalize et lowercase */
+
+.transform {
+	text-transform: uppercase;
+}
+
+.decoration {
+	text-decoration: underline; /* Regroupement */
+}
+
+.decoration-multi {
+	text-decoration-line: underline;
+	text-decoration-color: rgb(134, 7, 7);
+	text-decoration-style: dotted;
+}
+
+.shadow {
+	font-size: 2rem;
+	text-shadow: 2px 2px 1.5rem rgb(134, 7, 7); 
+}

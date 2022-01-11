@@ -1,0 +1,18 @@
+/* Created 2021-12-14 */
+/* L'utilisation des unités relatives comme em ou rem permettent au site de s'adapter entièrement en fonction de la taille de la type parente (body) */
+
+body {
+	font-size: 100%;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.6em;
+}
+
+p {
+	font-size: 0.9em;
+}

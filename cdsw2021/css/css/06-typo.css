@@ -1,0 +1,53 @@
+/* 2021-12-14 */
+
+/* Le choix des typos est basé sur les polices systèmes */
+
+/* Les typographies sur le web sont regroupées en 5 familles */
+/*
+	- serif: possède un trait (ligature) plus ou moins prononcé pour chaque lettre
+	- sans-serif: sans empattement avec des lignes épurées
+	- monospace: totues les lettres ont la même largeur fixe (look mécanique)
+	- cursive: imitent l'écriture humaine
+	- fantasy: polices décoratives
+*/
+
+/* Typo uniquement basée sur la famille */
+
+.sans-serif {
+	font-family: sans-serif;
+}
+
+/* Plusieurs fonts proposées.  Mettre toujours la famille en dernier */
+
+.lucida {
+	font-family: 'Lucida sans', Verdana, Helvetica, sans-serif;
+}
+
+.courier {
+	font-family: 'Courier New', monospace;
+}
+
+/* Police embarquée */
+/* Directive @font-face */
+
+@font-face {
+	font-family: Quicksand;
+	src: url('../typo/Quicksand_Book.otf');
+}
+
+.quicksand {
+	font-family: Quicksand, sans-serif;
+}
+
+.montserrat {
+	font-family: Montserrat, sans-serif;
+	font-weight: 300; /* Appliquer une version spécifique au niveau du gras */
+}
+
+/* import directive */
+/*Equivalant en HTML doud l forme d'un lien */
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@1,800&display=swap');
+
+.bodoni {
+    font-family: 'Bodoni Moda', serif;
+}
