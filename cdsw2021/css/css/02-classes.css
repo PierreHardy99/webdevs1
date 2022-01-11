@@ -1,37 +1,47 @@
 /* Created: 2021-12-07 */
 /* Updated: 2021-12-07 */
 
-/* Regroupement de sélecteur */
-h1,
-h2,
+/* Css externes (External)
+/* Ordre d'application des CSS, principe du plus proche de la balise (sélecteur)
+- inline
+- embedding
+- external
+*/
+
+/* Regroupement de sélécteurs (DRY) */
+/* Sélecteur de type */
+h1, 
+h2, 
 h3 {
-    font-family: Verdana, sans-serif;
+	font-family: Verdana, sans-serif;
 }
 
 h1 {
-    color: red;
+	color: #7f0000;
 }
 
 h2 {
-    color: blue;
+	color: #003c8f;
 }
 
 h3 {
-    color: orange;
+	color: #ff6f00;
 }
 
 p {
-    font-size: 20px;
+	font-size: 20px;
 }
 
-/* Classes en CSS */
-/* Un classe permet d'appliquer une exception sur une balise */
-/* Classe universelle - portée globale*/
+/* Sélecteur de classe */
+/* Une classe permet d'appliquer une exception sur une balise */
+/* Classe universelle - portée globale */
+
 .small {
-    font-size: 16px;
+	font-size: 16px;
 }
 
-/* Classe de sélecteyr - portée limitée */
+/* Classe de sélecteur - portée limitée */
+
 h2.color {
-    color: rgb(19, 107, 2);
+	color: rgb(19, 107, 2);
 }
