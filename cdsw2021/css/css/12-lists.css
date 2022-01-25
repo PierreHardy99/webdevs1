@@ -1,0 +1,74 @@
+/* Created 2022-01-li */
+
+.none {
+    list-style-type: none;
+}
+
+.alpha {
+    list-style-type: disc;
+}
+
+.zero {
+    list-style-type: decimal-leading-zero;
+}
+
+.position {
+    list-style-type: inside;
+}
+
+/* Liste à puces */
+.circle {
+    list-style-type: circle;
+}
+
+.image li {
+    list-style-type: none;
+    list-style-type: url('../img/pencil.png');
+}
+
+/* Menu */
+/* Simple */
+
+nav {
+    line-height: 70px;
+    background-color: #555;
+}
+
+.menu-links,
+.menu-boutons {
+    margin: 0;
+    padding: 0;
+}
+
+.menu-links li {
+    padding: 0.8rem;
+    display: inline;
+}
+
+.menu-links a{
+    color: #FFF;
+    text-decoration: none;
+}
+
+/* Pseudo classes */
+.menu-links a:hover{
+    color: #ff8e4d;
+}
+
+/* Menu boutons */
+.menu-boutons li {
+    display: inline-block;
+}
+
+.menu-boutons a {
+    margin: .5rem;
+    padding: 0.8rem;
+    color: #FFF;
+    text-decoration: none;
+    background-color: #FF8E4D;
+    border-radius: 6px;
+}
+
+.menu-boutons a:hover {
+    background-color: #ee5a04;
+}
