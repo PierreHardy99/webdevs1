@@ -1,0 +1,74 @@
+div {
+    height: 300px;
+}
+
+h2,p {
+    color: #FFF;
+}
+
+p {
+    width: 50%;
+}
+
+/* Couleur de fond */
+.color {
+    background-color: rgb(63,63,63);
+}
+
+/* Image de fond */
+.image {
+    background-image: url('../img/back01.jpg');
+}
+
+.image-cover {
+    background-image: url('../img/back01.jpg');
+    background-size: cover;
+}
+
+.image-position {
+    background-image: url('../img/back01.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.image-adaptée {
+    background-image: url('../img/maldives.jpg');
+    height: 300px;
+    background-repeat: no-repeat;
+    background-color: rebeccapurple;
+}
+
+.image-large {
+    background-image: url('../img/maldives-large.jpg');
+    height: 270px;
+    background-size: cover;
+    background-position: center;
+}
+
+.image-repeat {
+    height: 500px;
+    background-image: url('../img/woman.png');
+    background-repeat: no-repeat;
+}
+
+.image-repeat h2, 
+.image-repeat p, 
+.image-place h2, 
+.image-place p,
+.image-multiple h2,
+.image-multiple p {
+    color: rgb(83,83,83);
+}
+
+/* Background position permet de positionner une image dont la taille est réduite sur chaque bords de la div */
+.image-place {
+    background-image: url('../img/woman.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 50%;
+}
+
+/* Avec la propriété de regroupement background il est possible d'utiliser plusieurs images de fond */
+.image-multiple {
+    background: url('../img/woman.png') no-repeat left/30%, url('../img/woman-man.jpg') no-repeat right/30%;
+}

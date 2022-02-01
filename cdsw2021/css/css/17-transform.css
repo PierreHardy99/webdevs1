@@ -1,0 +1,14 @@
+/* Created 2022-01-25 */
+
+img {
+    width: 250px;
+    margin: 1.4rem;
+}
+
+.rotate img {
+    transform: rotate(-5deg);
+}
+
+.scale img:hover {
+    transform: scaleY(110%);
+}

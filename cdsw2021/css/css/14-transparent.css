@@ -1,0 +1,16 @@
+/* Created 2022-01-25 */
+
+div {
+    padding: 10% 0% 0% 10%;
+    height: 270px;
+    background: url('../img/back01.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+p {
+    width: 40%;
+    padding: 1.2rem;
+    background-color: rgba(36,36,36,0.2);
+    color: #FFF;
+}

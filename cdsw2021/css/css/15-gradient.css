@@ -1,0 +1,30 @@
+/* Created 2022-01-25 */
+
+p {
+    height: 60px;
+}
+.d1 {
+    background-image: linear-gradient(rgb(100,100,100),#aaa);
+}
+
+.d2 {
+    background-image: linear-gradient(to right,rgb(100,100,100),#aaa);
+}
+
+.d3 {
+    background-image: linear-gradient(to left,rgb(100,100,100),#aaa);
+}
+
+.d4 {
+    height: 80px;
+    background-image: linear-gradient(to bottom right,rgb(250, 32, 32),rgb(51, 0, 0));
+}
+
+/* Dégradés radiaux */
+.d5 {
+    background-image: radial-gradient(rgb(247,187,138), rgb(248,114,4));
+}
+
+.d6 {
+    background: radial-gradient(Ellipse at center, #27433C, #F2F2F2);
+}

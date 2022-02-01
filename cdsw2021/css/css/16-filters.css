@@ -1,0 +1,41 @@
+/* Created 2022-01-25 */
+
+img {
+    width: 350px;
+}
+
+img:hover {
+    filter: none;
+}
+
+.grayscale {
+    filter: grayscale(100%);
+}
+
+.sepia {
+    filter: sepia(70%);
+}
+
+.blur {
+    filter: blur(1px);
+}
+
+.saturate {
+    filter: saturate(2);
+}
+
+.brightness {
+    filter: brightness(130%);
+}
+
+.multi {
+    filter: grayscale(100%) blur(1px);
+}
+
+.drop-shadow {
+    filter: drop-shadow(8px 8px 5px rgb(182,182,182));
+}
+
+.drop-shadow-transparent {
+    filter: drop-shadow(8px 0 5px rgb(182,182,182));
+}
