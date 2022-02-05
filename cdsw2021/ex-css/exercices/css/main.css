@@ -21,6 +21,10 @@ fieldset h1 {
     margin: 0 10%;
 }
 
+fieldset:last-child img {
+    width: 80%;
+}
+
 legend {
     padding: 0 5px;
     font-size: 1.2rem;
