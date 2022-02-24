@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container div {
+    width: 20%;
+    height: 100px;
+}
+
+.item02 {
+    align-self: flex-start;
+}
+
+.item01 {
+    order: 1;
+}
+
+.item03 {
+    order: 2;
+}

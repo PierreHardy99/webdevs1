@@ -1,0 +1,7 @@
+/* La propriété cross-axis aligne les items sur l'Axe secondaire */
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}

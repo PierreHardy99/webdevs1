@@ -1,0 +1,38 @@
+/* Created 02-24-22 */
+
+nav {
+    height: 60px;
+    background-color: brown;
+}
+
+.slider {
+    height: 300px;
+    background-color: #BBB;
+}
+
+.about {
+    display: flex;
+    justify-content: space-evenly;
+    height: 300px;
+}
+
+.about div {
+    width: 40%;
+    background-color: #999;
+}
+
+.team {
+    display: flex;
+    justify-content: space-between;
+    height: 300px;
+}
+
+.team div {
+    width: 25%;
+    background-color: #CCC;
+}
+
+footer {
+    height: 70px;
+    background-color: brown;
+}

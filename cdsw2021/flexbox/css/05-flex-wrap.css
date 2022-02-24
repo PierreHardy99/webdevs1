@@ -1,0 +1,28 @@
+/* la propriété flew-wrap définit le passage à la ligne ou pas des items.
+Par défaut c'est la valeur no-wrap qui est utilisée.  Tout doit tenir sur une seule ligne.
+Pour un retour à la ligne d'un ou plusieurs items utilisez la valeur wrap */
+
+.no-wrap {
+	display: flex;
+	flex-wrap: nowrap; /* par défaut */
+	width: 50%;
+	margin-bottom: 2rem;
+	background-color: #aaa;
+}
+
+.no-wrap div{
+	width: 20%;
+	height: 50px;
+}
+
+.wrap {
+	display: flex;
+	flex-wrap: wrap;
+	width: 50%;
+	background-color: #aaa;
+}
+
+.wrap div {
+	width: 45%;
+	height: 50px;
+}

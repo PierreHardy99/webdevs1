@@ -1,0 +1,55 @@
+
+.container {
+	background-color: #999;
+}
+
+.container div {
+	width: 15%;
+	line-height: 50px;
+	font-size: 1.6rem;
+	color: #fff;
+	text-align: center;
+
+}
+
+.item01 {
+	background-color: #cfd8dc;
+}
+
+.item02 {
+	background-color: #ff5722;
+}
+
+.item03 {
+	background-color: #8bc34a;
+}
+
+.item04 {
+	background-color: #607d8d;
+}
+
+/* EXERCICE 01 */
+.ex01 {
+	display: flex;
+	justify-content: space-between;
+}
+
+.ex02 {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row-reverse;
+}
+
+.ex07 {
+	display: flex;
+	justify-content: space-between;
+}
+
+.ex07 .item02{
+	display: flex;
+	justify-content: space-between;
+}
+
+.ex07 .item02 .item02 {
+	background-color: #535353;
+}
