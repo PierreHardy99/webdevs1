@@ -12,7 +12,7 @@
             echo '<h1>'.$_GET['error'].'</h1>';
         }
     ?>
-    <form action="action/signup.php" method="post">
+    <form action="index.php?action=signup" method="post">
         <div>
             <label for="name">Nom</label>
             <input type="text" name="name">

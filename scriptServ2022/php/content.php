@@ -2,6 +2,7 @@
 
     $texts = ['html','php'];
 
+
     if (!empty($view)) {
         $path = __DIR__ . '/view/' . $view;
         foreach ($texts as $text) {
@@ -16,9 +17,18 @@
                 }
 
                 if ($view == 'signup' && isset($_SESSION['connected']) == 'true' || $view == 'login' && isset($_SESSION['connected']) == 'true') {
-                    header('Location: index.php');
+                    header('Location: index.php?view=profile');
                     exit();
                 }
+                include_once $complete_path;
+                die;
+            }
+        }
+    } elseif (!empty($action)) {
+        $path = __DIR__ . '/action/' . $action;
+        foreach ($texts as $text) {
+            $complete_path = $path . '.' . $text;
+            if (file_exists($complete_path)) {
                 include_once $complete_path;
                 die;
             }
