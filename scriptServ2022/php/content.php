@@ -14,6 +14,11 @@
                         $options .= '<option value="'.$i.'">'.$i.'</option>';
                     }
                 }
+
+                if ($view == 'signup' && isset($_SESSION['connected']) == 'true' || $view == 'login' && isset($_SESSION['connected']) == 'true') {
+                    header('Location: index.php');
+                    exit();
+                }
                 include_once $complete_path;
                 die;
             }
