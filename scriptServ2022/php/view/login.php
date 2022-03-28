@@ -13,7 +13,7 @@
             echo '<h1>'.$_GET['error'].'</h1>';
         }
     ?>
-    <form action="index.php?action=login" method="post">
+    <form action="index.php?view=action/login" method="post">
         <div>
             <label for="user">Pseudo</label>
             <input type="text" name="user" required>

@@ -6,11 +6,10 @@
         $view = $_GET['view'];
     }
 
-    if (isset($_GET['action'])) {
-        $action = $_GET['action'];
-    }
 
-    // require_once __DIR__ . '/view/main.html';
+    require_once __DIR__ . '/view/header.html';
+    require_once __DIR__ . '/view/menu.html';
+    require_once __DIR__ . '/view/main.php';
+    require_once __DIR__ . '/view/footer.html';
 
-    require_once __DIR__ . '/content.php';
 ?>
