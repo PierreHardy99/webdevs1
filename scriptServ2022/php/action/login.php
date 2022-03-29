@@ -1,5 +1,4 @@
 <?php
-<<<<<<< HEAD
 // Lorsqu'un utilisateur veut se connecter, il est impératif de supprimer toute valeur de session existante avant de connecter l'utilisateur [session]
 session_unset();
 /**
@@ -24,25 +23,3 @@ if (!empty($_POST['username']) && !empty($_POST['pwd'])) {
 }
 header('Location: index.php?view=view/login');
 die;
-=======
-
-    if (isset($_POST['user']) && !empty($_POST['password'])) {
-        $login = $_SESSION['user']['login'];
-        $mdp = $_SESSION['user']['password'];
-        $mdpHash = hash('sha256',$_POST['password']);
-
-        if ($_POST['user'] == $login) {
-            if ($mdpHash == $mdp) {
-                $_SESSION['connected'] = true;
-                header('Location: index.php?view=profile');
-                exit();
-            } else {
-                header('Location: index.php?view=login&error=Mot de passe incorrecte');
-                exit();
-            }
-        } else {
-            header('Location: index.php?view=login&error=Login incorrecte');
-            exit();
-        }
-    }
->>>>>>> c0d620a3ab918a4c4fcf4b691a9ac2302793c5cd

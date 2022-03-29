@@ -3,7 +3,6 @@
  * main page
  */
 
-<<<<<<< HEAD
 // Le fichier qui gère les sessions [sessions]
 require_once __DIR__ . '/lib/session.php';
 // Le fichier de configuration générale (ce fichier ne doit PAS faire partie du git. Ajoutez le au .gitignore)
@@ -24,18 +23,3 @@ require_once __DIR__ . '/view/header.html';
 require_once __DIR__ . '/view/menu.html';
 require_once __DIR__ . '/view/main.php';
 require_once __DIR__ . '/view/footer.html';
-=======
-        session_start();
-
-    if (isset($_GET['view'])) {
-        $view = $_GET['view'];
-    }
-
-
-    require_once __DIR__ . '/view/header.html';
-    require_once __DIR__ . '/view/menu.html';
-    require_once __DIR__ . '/view/main.php';
-    require_once __DIR__ . '/view/footer.html';
-
-?>
->>>>>>> c0d620a3ab918a4c4fcf4b691a9ac2302793c5cd
