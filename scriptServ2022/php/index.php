@@ -11,13 +11,20 @@ require_once __DIR__ . '/config.php';
 require_once __DIR__ . '/lib/db.php';
 // Un fichier comprenant des fonctions génériques [functions]
 require_once __DIR__ . '/lib/tools.php';
-// Un fichier comprenant des fonctions d'affichage [functions]
-require_once __DIR__ . '/lib/output.php';
+// Un fichier comprenant les fonctions liées à l'utilisateur [function + pdo]
+require_once __DIR__ . '/lib/user.php';
+
+// Vérifie si le fichier de config est présent
+if (!defined('APP_MODE')) {
+    $_GET['view'] = 'view/config';
+}
 
 $view = '';
 if (isset($_GET['view'])) {
     $view = $_GET['view'];
 }
+// connexion à la DB
+$dbh = connect();
 
 require_once __DIR__ . '/view/header.html';
 require_once __DIR__ . '/view/menu.html';

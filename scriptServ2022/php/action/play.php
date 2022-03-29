@@ -7,7 +7,7 @@ if (isset($_POST['num'])) {
     } else {
         echo 'Désolé, le nombre était ' . $rand;
     }
-    echo '<br><a href="index.php?view=view/play">Rejouer</a>';
+    echo linkA("index.php?view=view/play", 'Rejouer', 'd-block');
 } else {
     header('Location: index.php?view=view/play');
 }

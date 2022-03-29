@@ -6,3 +6,4 @@
     <input type="submit" value="Login">
 </form>
 <a href="index.php?view=view/signup">S'inscrire</a>
+<a href="index.php?view=view/lost">Mot de passe oublié</a>

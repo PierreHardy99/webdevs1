@@ -6,6 +6,12 @@
 
 if (!empty($_SESSION['username'])) {
     echo 'Hello ' . $_SESSION['username'];
+    $user = userGet('username',$_SESSION['username'],DB_FETCH_OBJECT);
+    foreach ($user as $key => $value) {
+        if ($key != 'password') {
+            echo '<p>'.$key.': '.$value.'</p>';
+        }
+    }
 } else {
     header('Location: index.php?view=view/login');
     die;
