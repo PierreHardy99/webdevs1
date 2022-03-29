@@ -1,23 +1,23 @@
 <?php
+/**
+ *  Script de gestion de contenu dynamique (basic routing)
+ */
 
-    $texts = ['html','php'];
+// Tableau comprenant les extensions de fichiers valides (l'ordre de préséance importe. Dans le cas présent, les fichiers html auront la priorité sur le php possédant le même path)
+$exts = ['html', 'php'];
 
-    if (!empty($view)) {
-        $path = __DIR__ . '/view/' . $view;
-        foreach ($texts as $text) {
-            $complete_path = $path . '.' . $text;
-            if (file_exists($complete_path)) {
+if (!empty($view)) {
 
-                if ($view == 'play') {
-                    $options = '';
-                    for ($i=0;$i<=100;$i++) {
-                        $options .= '<option value="'.$i.'">'.$i.'</option>';
-                    }
-                }
-                include_once $complete_path;
-                die;
-            }
+    // pour chaque extension valide ...
+    foreach ($exts as $ext) {
+        $complete_path = $view . '.' . $ext;
+        // On vérifie si le fichier existe sur le serveur
+        if (file_exists($complete_path)) {
+            // s'il existe, on exécute son contenu
+            include_once $complete_path;
+            die;
         }
     }
-
-header('Location: index.php?view=main');
+}
+header('Location: index.php?view=view/main');
+die;
