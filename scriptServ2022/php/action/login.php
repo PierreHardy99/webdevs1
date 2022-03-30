@@ -19,6 +19,8 @@ if (!empty($_POST['username']) && !empty($_POST['pwd'])) {
         $user = userGet('username', $_POST['username'], DB_FETCH_OBJECT);
         // On vérifie la validité du mot de passe. Comme le mot de passe est crypté en DB, on utilise une fonction spécifique.
         if (password_verify($_POST['pwd'], $user->password)) {
+            $now = date('Y-m-d H:i:s');
+            updateSQL('user','lastlogin',$now,'username',$_POST['username']);
             $valid = true;
         }
     } else {
@@ -28,7 +30,12 @@ if (!empty($_POST['username']) && !empty($_POST['pwd'])) {
     }
     if ($valid) {
         // Une fois les données validées, on assigne la ou les valeur(s) voulue(s) à la session [session]
-        $_SESSION['username'] =  $_POST['username'];
+        // $_SESSION['username'] =  $_POST['username'];
+        foreach ($user as $key => $value) {
+            if ($key != 'password') {
+                $_SESSION['user'][$key] = $value;
+            }
+        }
         // [Facultatif] Dans cet exercice, on redirige ensuite vers la page de profil
         header('Location: index.php?view=view/profile');
         die;

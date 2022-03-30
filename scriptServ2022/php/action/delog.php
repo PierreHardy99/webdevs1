@@ -4,7 +4,7 @@
  */
 
 // On vérifie si l'utilisateur est connecté. Pour ce faire, il convient de vérifier si la donnée correspondante existe en session
-if (!empty($_SESSION['username'])) {
+if (!empty($_SESSION['user']['username'])) {
     // Si c'est le cas, on supprime les valeurs de session
     session_unset();
     // Comme le projet fonctionne avec des includes, requires et autres redirections, il convient de fermer les possibles sessions encore ouvertes dans d'autres scripts
