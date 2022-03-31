@@ -5,9 +5,10 @@
  */
 
 if (!empty($_SESSION['user']['username'])) {
-    var_dump($_SESSION['user']);
-    echo pictureB64($_SESSION['user']['picture']);
+    // var_dump($_SESSION['user']);
+    // echo pictureB64($_SESSION['user']['picture']);
     echo '<h1>Bonjour '.$_SESSION['user']['username'].'</h1>';
+    echo '<img src="'.$_SESSION['user']['picture'].'" alt="'.$_SESSION['user']['username'].' - avatar">';
     echo '<ul>
             <li>Email : '.$_SESSION['user']['email'].'</li>
             <li>Compte crée : '.$_SESSION['user']['created'].'</li>
