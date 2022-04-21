@@ -4,7 +4,7 @@
  */
 
 // Tableau comprenant les extensions de fichiers valides (l'ordre de préséance importe. Dans le cas présent, les fichiers html auront la priorité sur le php possédant le même path)
-$exts = ['html', 'php', 'png', 'jpeg', 'jpg'];
+$exts = ['html', 'php'];
 
 if (!empty($view)) {
 

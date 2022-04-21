@@ -1,0 +1,8 @@
+fieldset {
+    border: 0.1rem solid;
+    padding: 1rem;
+    max-width: 640px;
+}
+legend {
+    font-weight: bold;
+}

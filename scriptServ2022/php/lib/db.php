@@ -105,21 +105,3 @@ function fetchSQL(PDOStatement $result, int $fetch = DB_FETCH_RESULT) {
     }
     return $data;
 }
-
-function updateSQL (string $table, string $column, string $change, string $field, string $value, string $type = 'STRING' ):void {
-
-    global $dbh;
-
-    switch ($type) {
-        case 'STRING':
-            $result = $dbh->prepare("UPDATE $table SET $column = '$change' WHERE $field = ?");
-            $result->execute([$value]);
-            break;
-
-        case 'INT':
-            $intChange = intval($change);
-            $result = $dbh->prepare("UPDATE $table SET $column = $intChange WHERE $field = ?");
-            $result->execute([$value]);
-            break;
-    }
-}

@@ -14,16 +14,12 @@ session_unset();
 // Il convient ensuite de vérifier que les données de connexion de l'utilisateur correspondent à des données existantes
 if (!empty($_POST['username']) && !empty($_POST['pwd'])) {
     $valid = false;
-    $_POST = validForm($_POST);
+    $_POST = validDataType($_POST);
     // Une constante de configuration (dans le config.php) permet de spéficier si l'authentification de l'utilisateur doit se faire via la base de données ou via le fichier de configuration
     if (APP_MODE == 'PDO') {
-
-        $userFiltre = validData($_POST['username']);
-        $user = userGet('username', $userFiltre, DB_FETCH_OBJECT);
+        $user = userGet('username', $_POST['username'], DB_FETCH_OBJECT);
         // On vérifie la validité du mot de passe. Comme le mot de passe est crypté en DB, on utilise une fonction spécifique.
         if (password_verify($_POST['pwd'], $user->password)) {
-            $now = date('Y-m-d H:i:s');
-            updateSQL('user','lastlogin',$now,'username',$userFiltre);
             $valid = true;
         }
     } else {
@@ -33,12 +29,7 @@ if (!empty($_POST['username']) && !empty($_POST['pwd'])) {
     }
     if ($valid) {
         // Une fois les données validées, on assigne la ou les valeur(s) voulue(s) à la session [session]
-        // $_SESSION['username'] =  $_POST['username'];
-        foreach ($user as $key => $value) {
-            if ($key != 'password') {
-                $_SESSION['user'][$key] = $value;
-            }
-        }
+        $_SESSION['username'] = $_POST['username'];
         // [Facultatif] Dans cet exercice, on redirige ensuite vers la page de profil
         header('Location: index.php?view=view/profile');
         die;
