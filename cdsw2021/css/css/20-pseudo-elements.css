@@ -1,0 +1,41 @@
+
+/* CSS - 2021-05-09 */
+/* Pseudo-elements */
+
+/* Ils permettent de cibler du contenu sans l'aide de balise */
+
+.letter p::first-letter{
+    font-size: 2rem;
+    color: #414141;
+}
+
+.line p::first-line {
+    font-weight: bold;
+}
+
+.content .doe::after {
+    font-style: italic;
+    content: " (John Doe - US)";
+}
+
+.content .servais::after {
+    font-style: italic;
+    content: " (Dominique Servais - BE)";
+}
+
+.img p::before {
+    content: url('../img/icons8-pdf-24.png')" ";
+}
+
+.selection p::selection {
+    background-color: coral;
+    color: #fff;
+}
+
+input::placeholder {
+    color: orange;
+}
+
+li::marker {
+    color: orange;
+}
