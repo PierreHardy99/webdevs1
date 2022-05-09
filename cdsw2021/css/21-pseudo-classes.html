@@ -5,9 +5,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/template.css">
     <link rel="stylesheet" href="css/21-pseudo-classes.css">
-    <title>Document</title>
+    <title>Pseudo classes</title>
 </head>
 <body>
+    <fieldset>
+        <legend>Pseudo classe sur les liens</legend>
+        <ul class="links">
+            <li><a href="#un">Lien 01</a></li>
+            <li><a href="#deux">Lien 02</a></li>
+            <li><a href="#trois">Lien 03</a></li>
+            <li><a href="#quatre">Lien 04</a></li>
+            <li><a href="#cinq">Lien 05</a></li>
+        </ul>
+    </fieldset>
+
+    <fieldset>
+        <legend>Pseudo classes sur les composants d'un formulaire</legend>
+        <form action="" method="post">
+            <span>Langues</span>
+            <input type="checkbox" name="c01">
+            <label for="c01">Français</label>
+
+            <input type="checkbox" name="c02">
+            <label for="c02">Anglais</label>
+
+            <input type="checkbox" name="c03">
+            <label for="c03">Italien</label>
+
+            <input type="checkbox" name="c04">
+            <label for="c04">Allemand</label>
+
+            <br>
+
+            <label for="mail">Email</label>
+            <input type="email" name="mail">
+
+            <br>
+
+            <label for="name">Nom</label>
+            <input type="text" name="name" pattern="[A-Za-z]{3,}">
+
+            <br>
+
+            <input type="submit">
+        </form>
+    </fieldset>
+
+    <fieldset>
+        <legend>Pseudo classe sur les positions (first & last)</legend>
+        <ul class="first-last">
+            <li>Item 01</li>
+            <li>Item 02</li>
+            <li>Item 03</li>
+            <li>Item 04</li>
+            <li>Item 05</li>
+        </ul>
+    </fieldset>
     
+    <fieldset>
+        <legend>Pseudo classe sur les positions (odd & even)</legend>
+        <ul class="nieme">
+            <li>Item 01</li>
+            <li>Item 02</li>
+            <li>Item 03</li>
+            <li>Item 04</li>
+            <li>Item 05</li>
+        </ul>
+    </fieldset>
+
+    <fieldset>
+        <legend>Pseudo classe sur les positions (nième enfant)</legend>
+        <table>
+            <tr>
+                <th>Nom</th>
+                <th>Prénom</th>
+                <th>Localité</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Doe</td>
+                <td>John</td>
+                <td>N-Y</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Doe</td>
+                <td>Jane</td>
+                <td>Bruxelles</td>
+                <td>40</td>
+            </tr>
+            <tr>
+                <td>Bulens</td>
+                <td>John</td>
+                <td>N-Y</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Duran</td>
+                <td>John</td>
+                <td>N-Y</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Robert</td>
+                <td>John</td>
+                <td>N-Y</td>
+                <td>50</td>
+            </tr>
+        </table>
+    </fieldset>
 </body>
 </html>

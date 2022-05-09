@@ -1,0 +1,74 @@
+/* CSS - 2022-05-09 
+   Elles permettent de cibler un élément suivant un état ou une position 
+   :link (liens non visités)
+   :visited (liens visités) 
+   :active (lien actifs) */
+
+.links ul {
+    list-style-type: none;
+}
+
+.links a {
+    text-decoration: none;
+    color: #777;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+.links a:active {
+    color: coral;
+}
+
+.links a:visited {
+    color: darkred;
+}
+
+input:invalid {
+    color: red;
+}
+
+input:valid {
+    color: green;
+}
+
+input:checked {
+    margin-left: 1rem;
+}
+
+input:focus {
+    background-color: deepskyblue;
+}
+
+.first-last li:first-child, 
+.first-last li:last-child{
+    color: red;
+}
+
+/* 
+nth-child(odd) nième enfant impair
+ 
+nth-child(even) nième enfant pair  
+*/
+
+.nieme li:nth-child(even) {
+    color: blue;
+}
+
+td,th {
+    border: 1px solid #777;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+tr:nth-child(even):hover {
+    background-color: #ccc;
+}
+
+tr:nth-child(4) {
+    border: 1px solid red;
+    color: red;
+}
