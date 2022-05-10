@@ -1,0 +1,93 @@
+div {
+    box-sizing: border-box;
+    padding: 0.9rem;
+    color: #fff;
+}
+
+.team div:nth-child(1) {
+    background-color: rgb(73, 72, 72);
+}
+
+.team div:nth-child(2) {
+    background-color: rgb(182, 64, 64);
+}
+
+.team div:nth-child(3) {
+    background-color: rgb(42, 77, 141);
+}
+
+.team div:nth-child(4) {
+    background-color: rgb(40, 82, 13);
+}
+
+.about div:first-child {
+    background-color: brown;
+}
+
+.about div:last-child {
+    background-color: #888;
+}
+
+nav {
+    background-color: rgb(231, 231, 231);
+    text-align: center;
+}
+
+nav ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+nav li {
+    margin: 0;
+    padding: 0.8rem 0;
+}
+
+nav li:hover {
+    background-color: rgb(196, 195, 195);
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+    .team {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .team div {
+        width: 50%;
+    }
+
+    .about {
+        display: flex;
+    }
+
+    .about div:first-child {
+        width: 60%;
+    }
+
+    .about div:last-child {
+        width: 40%;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: end;
+    }
+
+    nav li {
+        padding: 0.4rem 0.6rem;
+    }
+}
+
+/* Deskop */
+@media screen and (min-width: 992px) {
+    .team div {
+        width: 25%;
+    }
+}
