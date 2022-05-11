@@ -1,0 +1,103 @@
+/* CSS - 2022-05-10 */
+/* GENERALS */
+body {
+    font: 90% 'Open Sans', sans-serif;;
+}
+
+/* Header */
+header {
+    display: flex;
+    background-color: rgb(65, 65, 65);
+    justify-content: space-between;
+    color: #fff;
+    padding: 0.8rem;
+}
+
+header input{
+    width: 140px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background-color: transparent;
+    color: inherit;
+}
+
+header input::placeholder {
+    color: inherit;
+}
+
+header input:focus {
+    outline: 0; /* Filet du focus du search */
+}
+
+header input::-webkit-search-cancel-button {
+    display: none;
+}
+
+header button {
+    border: none;
+    background: transparent;
+    color: inherit;
+}
+
+/* Slider */
+
+.slider {
+    display: flex;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    background: url('../img/slider.jpg'), no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.slider div {
+    text-align: center;
+}
+
+.slider h1 {
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+/* Navbar */
+nav {
+    text-align: center;
+    color: black;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    border-bottom: 1px solid rgb(191, 174, 174);
+    padding: 0.9rem 0;
+}
+
+nav li:hover {
+    background-color: rgb(191, 174, 174);
+    
+}
+
+nav li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+@media screen and (min-width: 772px) {
+    nav {
+        background-color: black;
+        padding-right: 1.5rem;
+    }
+    nav ul {
+        display: flex;
+        justify-content: end;
+    }
+    nav li {
+        border: none;
+        padding: 1rem 0.8rem;
+        color: #fff;
+    }
+}
